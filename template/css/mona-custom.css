@@ -1,0 +1,171 @@
+.hd-menu .menu-item .new-hotline-wrap {
+    /* background-image: url('/template/assets/images/header/hotline-mask.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24.6rem;
+    height: 4.8rem;
+    position: relative;
+    transform: translateX(-4rem);
+}
+
+.hd-menu.show-on-mobile .menu-item .new-hotline-wrap {
+    transform: translateX(0)
+}
+
+.hd-menu .menu-item .new-hotline-wrap .hotline-panda {
+    position: absolute;
+    right: -6rem;
+    top: 0.9rem;
+    width: 6.2rem;
+    height: 6.2rem;
+}
+
+.hd-menu .menu-item .new-hotline-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: unset;
+    color: #fff;
+    border-radius: unset;
+    padding: unset;
+    background-position-x: 0;
+    animation: hotline-movement 10s infinite linear;
+    background-image: url('/template/assets/images/header/hotline-sky.png'), linear-gradient(151deg, #208CFF 2.08%, #6DDDFF 100%);
+    background-repeat: no-repeat;
+    -webkit-mask-image: url('/template/assets/images/header/hotline-mask.png');
+    mask-image: url('/template/assets/images/header/hotline-mask.png');
+    -webkit-mask-size: 100% 100%;
+    mask-size: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.hd-menu .menu-item .new-hotline-item:hover {
+    background-color: unset;
+}
+
+.hd-menu .menu-item .new-hotline-item .hotline-number {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 10rem);
+    height: 100%;
+    object-fit: contain;
+    margin-left: 2rem;
+}
+
+.hd-menu .menu-item .new-hotline-item .hotline-decor {
+    position: absolute;
+    right: 1.6rem;
+    top: 0.1rem;
+    width: 4.6rem;
+    height: 4.6rem;
+}
+
+/* night */
+.hd-menu .menu-item .new-hotline-wrap.night {
+    background-image: url('/template/assets/images/header/hotline-bg-night.png');
+}
+
+.hd-menu .menu-item .new-hotline-item.night {
+    background-image: url('/template/assets/images/header/hotline-night-sky.png');
+}
+
+.hd-menu .menu-item .new-hotline-item.night .hotline-number {
+    margin-left: 5.8rem;
+}
+
+.hd-menu .menu-item .new-hotline-item.night .hotline-decor {
+    right: unset;
+    left: 0.3rem;
+}
+
+@keyframes hotline-movement {
+    to {
+        background-position-x: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .hd-menu .menu-item .new-hotline-wrap {
+        width: 19rem;
+        height: 4.5rem;
+    }
+
+    .hd-menu .menu-item .new-hotline-item .hotline-number {
+        width: 65%;
+        margin-left: 0;
+    }
+
+    .hd-menu .menu-item .new-hotline-item .hotline-decor {
+        width: 4rem;
+        height: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .hd-menu .menu-item .new-hotline-wrap .hotline-panda {
+        top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .hd-menu .menu-item .new-hotline-wrap .hotline-panda {
+        top: -0.3rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hd-menu .menu-item .new-hotline-wrap .hotline-panda {
+        top: 0;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .site-software .hd-logo {
+        width: 22%;
+    }
+
+    .site-software .mona-logo img {
+        max-width: 90%;
+    }
+
+    .hd-menu .menu-item .new-hotline-wrap {
+        width: 19rem;
+        height: 4.8rem;
+    }
+
+    .hd-menu .menu-item .new-hotline-item .hotline-number {
+        width: 65%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 2800px) {
+    .site-software .hd-logo {
+        width: 22%;
+    }
+
+    .hd-menu .menu-item .new-hotline-wrap {
+        width: 25rem;
+        height: 4.8rem;
+    }
+}
+
+@media screen and (min-width: 3200px) {
+    .hd-menu .menu-item .new-hotline-wrap .hotline-panda {
+        top: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 3400px) {
+    .site-software .hd-logo {
+        width: 24%;
+    }
+}

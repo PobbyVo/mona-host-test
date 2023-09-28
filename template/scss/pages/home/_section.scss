@@ -1,0 +1,19 @@
+:root {
+    --paddingSection: 12rem;
+    --paddingSectionMb: 6rem;
+}
+
+.section-home {
+    padding: var(--paddingSection) 0;
+    @include max(1200px) {
+        padding: var(--paddingSectionMb) 0;
+    }
+}
+
+.font-utm-bebas {
+    font-family: 'UTM Bebas';
+}
+
+.font-bebas-neue {
+    font-family: 'Bebas Neue';
+}

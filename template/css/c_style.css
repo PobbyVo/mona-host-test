@@ -1,0 +1,42 @@
+.nfeed-image-item {
+  position: relative;
+}
+.nfeed-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 2.4rem;
+  text-align: center;
+}
+.nfeed-play-icon {
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+}
+.nfeed-play-text {
+  font-size: 4rem;
+  font-family: "SVN-Just Saying";
+  color: white;
+}
+@media only screen and (max-width: 1200px) {
+  .nfeed-play-text {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nfeed-play-text {
+    font-size: 3rem;
+  }
+}
+
+@media (hover: hover) {
+  .c-btn-live:hover {
+    border: 0.1rem solid transparent;
+  }
+}
+
+/*# sourceMappingURL=c_style.css.map */

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'SVN-Just Saying Dings';
+    src: url('SVN-JustSayingDings.woff2') format('woff2'),
+        url('SVN-JustSayingDings.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Just Saying';
+    src: url('SVN-JustSaying.woff2') format('woff2'),
+        url('SVN-JustSaying.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

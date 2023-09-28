@@ -1,0 +1,150 @@
+.h-video {
+    background: linear-gradient(180deg, #270046 106.48%, #7C0FD1 201.3%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: -12rem;
+    padding-top: -18rem;
+
+    &-bg {
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        width: 100%;
+        height: 100%;
+        // mix-blend-mode: overlay;
+    }
+
+    &-star {
+        position: absolute;
+        top: 28%;
+        left: 0;
+        width: 100%;
+        mix-blend-mode: screen;
+    }
+
+    &-tt {
+        font-size: 7.2rem;
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+        padding-top: 8rem;
+        @include max(1200px) {
+            font-size: 5.2rem;
+            padding-top: 4rem;
+        }
+
+        @include max(600px) {
+            font-size: 3.2rem;
+            padding-top: 1.6rem;
+        }
+
+        .txt {
+            display: block;
+
+            &-big {
+                font-size: 9.6rem;
+                @include max(1200px) {
+                    font-size: 5.6rem
+                }
+                @include max(600px) {
+                    font-size: 4.2rem
+                }
+            }
+        }
+    }
+
+    &-desc {
+        @include fz-40;
+        @include max(1200px) {
+            font-size: 2.4rem;
+        }
+        @include max(600px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &-decor {
+        z-index: 4;
+        pointer-events: none;
+        position: absolute;
+        @include max(600px) {
+            display: none;
+        }
+
+        &-person {
+            @include max(1200px) {
+                display: none;
+            }
+            bottom: -7%;
+            left: calc(100% * (1.8 / 10) * -1);
+            width: calc((100% * (2 / 10)) + (100% * (0.5 / 10)));
+        }
+
+        &-panda {
+            top: -7%;
+            right: calc(100% * (1.7 / 10) * -1);
+            width: calc((100% * (2 / 10)) + (100% * (0.5 / 10)));
+            @include max(1200px) {
+                width: 15%;
+                right: -10%;
+            }
+        }
+    }
+    .video-general {
+        margin-top: 17.6rem;
+        @include max(1200px) {
+            margin-top: 10rem;
+        }
+        @include max(600px) {
+            margin-top: 6rem;
+            padding-bottom: 5.6rem;
+        }
+        .title {
+            font-size: 3.2rem;
+            top: -17%;
+            border-radius: 0.8rem;
+            z-index: 4;
+            background: linear-gradient(128deg, #7C0FD1 -11.55%, #529FF5 137.28%);
+            @include max(1200px) {
+                font-size: 2.2rem;
+                padding: 1.2rem 2rem;
+                border-radius: .8rem;
+                transform: translate(-50%, -40%);
+                width: 80%;
+                top: -4.5%;
+            }
+            @include max(992px) {
+                top: -11.5%;
+            }
+            @include max(600px) {
+                font-size: 1.2rem;
+            }
+        }
+        .main-video {
+            z-index: 0;
+        }
+    }
+}
+
+@include max(1200px) {
+    .banner .container .tt {
+        font-size: 4.8rem;
+    }
+}
+
+@include max(600px) {
+    .banner-background {
+        margin-top: 0;
+    }
+
+    .banner .container .tt {
+        font-size: 3.2rem;
+    }
+
+}
+
+@include max(500px) {
+    .banner .container .sub {
+        font-size: 1.6rem;
+    }
+}

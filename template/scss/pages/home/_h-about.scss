@@ -1,0 +1,177 @@
+.h-about {
+    padding: 16rem 0;
+    position: relative;
+    @include max(1200px) {
+        padding: 6rem 0 14rem 0;
+    }
+    &-bg {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20vw;
+        @include max(1200px) {
+            bottom: 9.2%;
+        }
+        @include max(1024px) {
+            bottom: 12%;
+        }
+        @include max(600px) {
+            bottom: 15%;
+        }
+
+        @include max(550px) {
+            bottom: 12.6%;
+            height: 35vw;
+        }
+
+        img {
+            object-fit: fill;
+        }
+    }
+
+    &-col {
+        position: relative;
+        @include max(600px) {
+            width: 100%;
+        }
+
+        &:nth-child(1) {
+            @include max(1200px) {
+                width: 40%;
+            }
+            @include max(600px) {
+                width: 100%;
+            }
+        }
+
+        &:nth-child(2) {
+            @include max(1200px) {
+                width: 60%;
+                padding-left: 2.4rem;
+            }
+            @include max(600px) {
+                width: 100%;
+                margin-bottom: 6rem;
+            }
+        }
+        .img {
+            width: calc(5 * 100% / 6);
+            position: relative;
+            margin-left: 2.4rem;
+            top: 0%;
+            @include max(1200px) {
+                width: 95%;
+                margin-left: auto;
+            }
+        }
+
+        .img-bg {
+            .decor {
+                position: absolute;
+                &.x1 {
+                    top: -19%;
+                    right: 5%;
+                    width: calc(2.5 * 100% / 6);
+                    z-index: -1;
+                    @include max(1200px) {
+                        top: -10%;
+                    }
+                    @include max(600px) {
+                        width: 25%;
+                       
+                    }
+                }
+                &.x2 {
+                    bottom: 10%;
+                    right: 0;
+                    width: calc(2 * 100% / 6);
+                    @include max(600px) {
+                        width: 25%;
+                    }
+                }
+                &.x3 {
+                    top: 10%;
+                    width: calc(2.5 * 100% / 6);
+                    left: -15%;
+                    @include max(600px) {
+                        width: 25%;
+                        left: 0;
+                    }
+                }
+            }
+            img {
+                object-fit: contain;
+            }
+        }
+
+        .content {
+            .logo {
+                width: calc(100% * (2 / 6));
+                margin-bottom: 0.4rem;
+
+                &-link {
+                    display: flex;
+                }
+            }
+
+            .title {
+                display: flex;
+                align-items: stretch;
+                font-family: 'UTM Bebas';
+                font-size: 5.6rem;
+                @include max(1200px) {
+                    font-size: 4.2rem;
+                }
+                @include max(992px) {
+                    font-size: 3.2rem;
+                }
+                @include max(600px) {
+                    font-size: 2.4rem;
+                }
+            }
+
+            .txt-w {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.2;
+            }
+
+            .than {
+                font-size: 25rem;
+                margin-left: 1.6rem;
+                margin-top: -4.5rem;
+                line-height: 1;
+                @include max(1200px) {
+                    font-size: 20rem;
+                }
+                @include max(992px) {
+                    font-size: 17rem;
+                }
+                @include max(600px) {
+                    font-size: 12rem;
+                }
+            }
+        }
+    }
+
+    &-ctn {
+       @include max(600px) {
+        display: flex;
+        flex-direction: column-reverse;
+       }
+    }
+}
+
+.w-problem {
+    @include max(600px) {
+        margin-top: 5.6rem;
+    }
+}
+
+.render-12_linear {
+    .tab-button-custom .item:hover {
+        background-color: #f5851e;
+    }
+}

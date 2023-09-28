@@ -1,0 +1,129 @@
+.h-commit {
+    margin-top: -4rem;
+    @include max(550px) {
+        margin-top: 0;
+    }
+    &-w {
+        position: relative;
+        z-index: 5;
+        -webkit-mask-image: url(../assets/images/host-home/mask-03.png);
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        padding: 14rem 0 24rem 0;
+        background: radial-gradient(54.97% 54.97% at 50% 50%, #8fb2bd  0%, #7C0FD1 100%);
+        @include max(1200px) {
+            padding: 6rem 0 10rem 0;
+        }
+        @include max(550px) {
+            filter: unset;
+            margin-left: -0.8rem;
+            width: calc(100% + 1.6rem);
+            -webkit-mask-image:unset;
+            border-radius: 1.6rem;
+            padding: 1.6rem 0;
+        }
+    }
+    .host-tt {
+        position: relative;
+        z-index: 3;
+        margin-bottom: 23.5rem;
+        @include max(1200px) {
+            margin-bottom: 15rem;
+        }
+        @include max(550px) {
+            margin-bottom: 8.2rem;
+            padding:0 .8rem;
+        }
+        .txt-bg {
+            margin: 0 auto;
+            margin-bottom: 0.4rem;
+            @include max(768px) {
+                margin-bottom: 0.8rem;
+            }
+        }
+        br {
+            @include max(550px) {
+                display: none;
+            }
+        }
+    }
+
+    &-main {
+        position: relative;
+
+        .member {
+            position: relative;
+            z-index: 2;
+        }
+
+        .decor {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            &.bg {
+                bottom: 0;
+            }
+            &.bg-radient {
+                bottom: -4%;
+                width: 77%;
+                height: 120%;
+                z-index: -1;
+            }
+        }
+    }
+    &-btn {
+        @include max(550px) {
+            width: 100%;
+            padding: 0 .8rem;
+        }
+        .btn-second {
+            height: 100%;
+            .txt {
+                font-size: 4rem;
+                @include max(1200px) {
+                    font-size: 2.4rem;
+                }
+                @include max(550px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    &-re {
+        margin-top: 4rem;
+        @include max(1200px) {
+            margin-top: 2.4rem;
+        }
+    }
+    .seopj-info-star .text {
+        color: #fff;
+        position: relative;
+        top: .2rem;
+        @include max (1200px) {
+            top: .2rem;
+        }
+    }
+}
+
+.home-sesion-not-contact {
+    .home-sesion-not-contact-wrap {
+        .btn-clh  {
+            display: block;
+            margin: 0 auto;
+            width: 54%;
+            text-align: center;
+            @include max(1200px) {
+                width: 65%;
+            }
+            @include max(992px) {
+                width: 100%;
+            }
+            .txt {
+                font-size: 3.2rem;
+                @include max(1200px) {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    } 
+}

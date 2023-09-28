@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'iCiel Romantically';
+    src: url('iCielRomantically-Regular.eot');
+    src: url('iCielRomantically-Regular.eot?#iefix') format('embedded-opentype'),
+        url('iCielRomantically-Regular.woff2') format('woff2'),
+        url('iCielRomantically-Regular.woff') format('woff'),
+        url('iCielRomantically-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

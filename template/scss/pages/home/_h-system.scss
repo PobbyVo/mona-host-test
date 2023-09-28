@@ -1,0 +1,136 @@
+.h-system {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding-bottom: 18rem;
+    @include max(1200px) {
+        padding-bottom: 1.6rem;
+    }
+    @include max(850px) {
+        padding-bottom: 0;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 10%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url(../assets/images/host-home/bg-system.png);
+    }
+    &-img {
+        position: relative;
+        width: calc(11.2 * 100% / 12);
+        margin: 0 auto;
+        margin-top: 1.6rem;
+        z-index: 2;
+        @include max(1200px) {
+            width: 100%;
+        }
+        .decor {
+            position: absolute;
+            z-index: -1;
+            @include max(550px) {
+                display: none;
+            }
+            &.line-left {
+                left: -15%;
+                top: 25%;
+                width: 44%;
+                height: 66%;
+                @include max(1368px) {
+                    left: -10%;
+                }
+                @include max(1200px) {
+                    left: 2%;
+                    width: 33%;
+                }
+            }
+            &.line-right {
+                right: -15%;
+                top: -7%;
+                width: 55%;
+                height: 100%;
+                @include max(1200px) {
+                    width: 40%;
+                    right: 0;
+                }
+            }
+        } 
+    } 
+}
+
+.session-service {
+    overflow: hidden;
+    position: relative;
+    @include max(1200px) {
+        margin-top: 0;
+        padding-top: 6rem;
+    }
+    &::before, &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include max(1200px) {
+            display: none;
+        }
+    }
+    // &::before {
+    //     width: 33%;
+    //     height: 100%;
+    //     top: -22%;
+    //     left: -2%;
+    //     background-image: url(../assets/images/host-home/bg-violet-02.png);
+    //     @include max(992px) {
+    //         display: none;
+    //     }
+    // }
+    &::after {
+        width: 21%;
+        height: 100%;
+        top: -16%;
+        right: 0;
+        background-image: url(../assets/images/host-home/bg-violet-01.png);
+    }
+}
+
+.w-linear {
+    position: relative;
+    z-index: 2; 
+    &::before {
+        background: linear-gradient(0deg, #1EC2F5 -36.12%, #A943F9 96.04%);
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        @include max(550px) {
+            height: 95%;
+        }
+    }
+}
+
+.host-page .session-statistical.h-platform {
+    @include max(500px) {
+        margin-top: 0;
+    }
+    .statistical-traffic {
+        @include max(850px) {
+            padding-top: 0 !important;
+            margin-top: 0;
+        }
+        .communication {
+            @include max(850px) {
+                background-color: transparent;
+            }
+        }
+    }
+}
